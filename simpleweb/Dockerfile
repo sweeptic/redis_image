@@ -5,8 +5,9 @@ WORKDIR /usr/app
 
 # Download and install a depedency
 # RUN apk add --update redis
-COPY ./ ./
+COPY ./package.json ./
 RUN npm install
+COPY ./ ./
 
 # Tell the image what todo when it starts as a container
 # CMD ["redis-server"]
