@@ -1,6 +1,7 @@
 # Use an existing docker image as a base
 FROM node:14.14.0-alpine
 
+WORKDIR /usr/app
 
 # Download and install a depedency
 # RUN apk add --update redis
