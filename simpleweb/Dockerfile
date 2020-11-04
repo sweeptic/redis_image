@@ -1,5 +1,5 @@
 # Use an existing docker image as a base
-FROM alpine
+FROM node:alpine
 
 
 # Download and install a depedency
